@@ -276,6 +276,11 @@ header{ /* empilha os itens do header */
   position: absolute;
   right: 10px;
 }
+
+.btn1{
+  font-size: 1.3rem;
+  padding: 0.8rem;
+}
 }
 
 

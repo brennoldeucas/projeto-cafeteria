@@ -103,7 +103,13 @@ header{
     cursor: pointer;
     margin: 0 auto;
     display: block;  
-    border-radius: 10rem;   
+    border-radius: 10rem; 
+
+    width: 100%; 
+    max-width: 300px; 
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
 }
 
 .btn1:hover{
