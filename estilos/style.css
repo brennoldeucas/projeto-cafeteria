@@ -1,0 +1,469 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    --font-size:10px;
+
+}
+
+@keyframes carrinho{
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.2);
+        }
+        50% {
+            transform: scale(0.8);
+        }
+        75% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color:var(--bg);
+}
+
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--bg);
+}
+.header section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.navBar a{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(238, 236, 236, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.navBar a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5;
+    font-size: 2rem;
+}
+
+.icons img{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.btn1{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 1rem 1rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;  
+    border-radius: 10rem;
+    
+}
+
+.btn:hover{
+    letter-spacing: 0.3rem;
+}
+
+.home-container{
+    background: url('https://i.ibb.co/KX8pvpC/home-img.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.content{
+    max-width: 30rem;
+    align-items: center;  
+    text-align: center; 
+}
+
+.content h3{
+    color: #fff;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.content p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.6;
+    padding: 1rem 0rem;
+    text-align: center;
+}
+
+.pegue{
+    display: inline-block;
+}
+
+.login{
+    font-size:1.7em;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.frase {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: lighter;
+}
+
+.cadastro{
+    position: absolute;
+    top: 8%;
+    left: 2%;
+    transform: translate(0, 0); /* sem deslocamento adicional, mas pode ajustar se quiser */
+    color: white;
+    padding: 1rem;
+    max-width: 300px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.title{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.title span{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.sobre .row{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+}
+
+.row .btn1{
+    width: 90%;
+    text-align: center;
+}
+
+.sobre .row .conteudo h3{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.sobre .row .conteudo p{
+    color: #fff;
+    margin: 5px;
+}
+
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+.menu .box-container .boxp{
+    text-align: center;
+    border: var(--border);
+    padding: 3rem;
+    cursor: pointer;
+}
+
+.menu .box-container .boxp img{
+    height: 8rem;
+    border: solid 3px #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.menu .box-container .boxp img:hover{
+    height: 09rem;
+    transition: 0.3s inherit;
+    border: solid 3px black;
+}
+
+.menu .box-container .boxp h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+
+.menu .box-container .boxp .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+.menu .box-container .boxp span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .boxp:hover:hover{
+    background-color: #fff;
+}
+
+.menu .box-container .boxp:hover>*{
+    
+    color: var(--black);
+}
+
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    
+}
+
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 2rem 0rem;
+    line-height: 1.5;
+    font-weight: lighter;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.review .box-container .box h3{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 1rem 0rem;
+
+}
+
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem;
+}
+
+.footer .share img{
+    margin: 0.3;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+    
+}
+
+.footer .share img:hover{
+    background-color: var(--main-color);
+}
+/*****************carrinho e procura******************/
+
+#carrinho{
+    background-color: var(--black);
+    border: var(--border);
+    padding: 0.8rem;
+    border-radius: 1rem;
+    z-index: 100;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(238, 236, 236, 0.5);
+}
+
+
+#carrinho-contagem{
+    color: #fff;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: px; /* espaçamento entre os ícones */
+}
+
+#carrinho-contagem {
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+.limpar{   
+    margin-bottom: 10px;
+    padding: 4px 4px;
+    background-color: var(--main-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 47%;
+    font-weight: bold;
+    
+
+    position: absolute;
+    bottom: 3px;
+    left:30%;
+    transform: translateX(-50%);
+}
+
+.limpar:hover{
+    width: 48%;
+}
+
+.comprar{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    padding: 5px 5px;
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    width:40%;
+    font-weight: bold;
+    
+
+    position: absolute;
+    bottom: 3px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.comprar:hover{
+    width: 41%;
+}
+
+.valor{
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lista{               /* Scroll horizontal */
+    padding: 0;
+    margin: 0 0 28px 0;        /* Espaço abaixo da lista */
+    list-style: none;          /* Remove bolinhas */
+    border-bottom: 1px solid #ddd;
+}
+
+.lista li{     /* Fica lado a lado */
+    padding: 3px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 10px;
+}
+
+
+
+.lista li:hover{
+    background-color:#f0f0f0;;
+}
+
+#lista-carrinho{
+    width: 23%;
+}
+
+#lista-carrinho::before {
+    content: url('https://i.ibb.co/yp84LgK/logo.png');
+    width: 50px;
+    position: absolute;
+    left: 20px;
+}
+
+#lista-carrinho h2::after {
+    content: "🛒";
+}
+.link1{
+    background-color: #fff;
+    color: #000;
+}
+
+.busca{
+    text-align: center;
+    box-shadow: 2px 2px 2px var(--main-color);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#container-pesquisa{
+    box-shadow: 1px 1px 1px 1px var(--bg) inset;
+    background-image: url('../html-css/');
+}
+
+.item-pesquisa{
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.item-pesquisa:hover{
+    background-color: #f0f0f0;
+}
+
+.seucarrinho{
+    font-weight: bold;
+    background-color: #8B5E3C;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+

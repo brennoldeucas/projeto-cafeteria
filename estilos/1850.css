@@ -1,0 +1,13 @@
+@media screen and (max-width: 1850px){
+    body{
+        
+    }
+
+    .cadastro{
+        display: none;
+    }
+
+    #lista-carrinho::before{
+        display: none;
+    }
+}

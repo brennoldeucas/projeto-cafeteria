@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafeteria.DeV</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/1850.css">
+    <link rel="stylesheet" href="estilos/1470.css">
+    <link rel="stylesheet" href="estilos/1150.css">
+    <link rel="stylesheet" href="estilos/modoClaro.css">
+</head>
+<body>
+    <header class="header">
+        <section>
+            <a href="#" class="logo">
+                <a href="https://ibb.co/5k5KqsC"><img src="https://i.ibb.co/yp84LgK/logo.png" alt="logo" border="0"></a>
+            </a>
+            <nav class="navBar">
+                <a href="#">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#menu">Menu</a>
+               <a href="#review">Avaliações</a>
+                <a href="#address">endereço</a>
+            </nav>
+            <div class="icons">
+                <img id="procurar" class="search" width="30" height="30" src="https://img.icons8.com/ios-filled/50/ffffff/search--v1.png" alt="search--v1"/>
+                <img id="carrinho" width="30" height="30" src="https://img.icons8.com/material-outlined/24/ffffff/shopping-cart--v1.png" alt="shopping-cart--v1" />
+                <span id="carrinho-contagem">(0)</span>
+
+            </div>
+            <div class="cadastro">
+                    <h4 class="login">ja tem login?<a href="login.html"> não?</a></h4>
+                    <h4 class="frase"> faça seu login e ganha até 10% de <span class="desconto">desconto!</span></h4>
+            </div>  
+            <div class="switch">
+                <label class="switch-tema">
+                <input type="checkbox" id="toggle-tema">
+                <span class="slider"></span>
+                </label>
+            </div>
+        </section>
+    </header>
+
+    <div class="home-container">       
+        <section id="#home">               
+            <div class="content">                            
+                <h3>code com o melhor café da região!</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis fugit veritatis illum quasi at adipisci recusandae modi, incidunt repellendus, quidem nisi consequuntur excepturi debitis architecto quod iusto labore doloribus maiores?</p>
+                <a href="#menu" class="btn1"><span class="Pegue">Pegue o seu agora</span></a>
+            </div>
+        </section>
+    </div>
+
+    <section class="sobre" id="sobre">
+        <h2 class="title">sobre <span>nós</span></h2>
+        <div class="row">
+            <div class="container-image">
+                <img src="https://i.ibb.co/GRpcL8v/about-img.jpg" alt="about-img" border="0">
+            </div>
+
+            <div class="conteudo">
+                <h3>O que faz nosso café ser especial?</h3>
+                <p>Na nossa cafeteria, cada xícara conta uma história. Aqui, você encontra muito mais do que cafés especiais: oferecemos um espaço acolhedor para você relaxar, trabalhar, encontrar amigos ou simplesmente apreciar um momento só seu.
+                    Trabalhamos com grãos selecionados de alta qualidade, preparados por baristas apaixonados pelo que fazem. Do espresso intenso ao cappuccino cremoso, cada bebida é feita com carinho para proporcionar uma experiência única. Além disso, nosso cardápio conta com opções irresistíveis de bolos, pães artesanais, lanches e doces que combinam perfeitamente com o café.                  
+                    Seja para um café rápido no caminho, uma reunião descontraída ou um momento de pausa no dia, nossa cafeteria é o lugar ideal para você se sentir em casa. Venha nos visitar e descubra o prazer de saborear um bom café em um ambiente que inspira boas conversas e bons momentos.</p>
+                <a href="#address" class="btn1">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <h2 class="title">Nosso <span>menu</span></h2>
+            
+        <div class="box-container">
+            <div class="boxp" id="café-coado">
+                <img src="https://i.ibb.co/XkGk0YY/menu-1.png" alt="item-1">
+                <h3>Café coado</h3>
+                <div class="price">R$ 15,99 <span>R$20,99</span></div>
+                <input class="btn1" type="submit" value="adicionar ao carrinho"  onclick="addCarrinho('Café Coado', 15.99)">
+            </div>
+
+            <div class="boxp" id="café-com-canela">
+                <img src="https://i.ibb.co/4PvZRWh/menu-2.png" alt="item-2">
+                <h3>Café com canela</h3>
+                <div class="price">R$ 16,99 <span>R$19,99</span></div>
+                <input class="btn1" type="submit" value="adicionar ao carrinho" onclick="addCarrinho('Café com canela', 16.99)">
+            </div>
+
+            <div class="boxp" id="capputino">
+                <img src="https://i.ibb.co/T1KGT8s/menu-3.png" alt="item-3">
+                <h3>Capputino</h3>
+                <div class="price">R$ 13,99 <span>R$18,99</span></div>
+                <input class="btn1" type="submit" value="adicionar ao carrinho" onclick="addCarrinho('Capputino', 13.99)">
+            </div>
+
+            <div class="boxp" id="café-expresso">
+                <img src="https://i.ibb.co/bP461r8/menu-4.png" alt="item-4">
+                <h3>Café expresso</h3>
+                <div class="price">R$ 11,99  <span>R$12,99</span></div>
+                <input class="btn1" type="submit" value="adicionar ao carrinho" onclick="addCarrinho('Café expresso', 11.99)">
+            </div>
+
+            <div class="boxp" id="café-puro">
+                <img src="https://i.ibb.co/6NxVCdw/menu-5.png" alt="item-5">
+                <h3>Café puro</h3>
+                <div class="price">R$ 8,99 <span>R$13,99</span></div>
+                <input class="btn1" type="submit" value="adicionar ao carrinho" onclick="addCarrinho('Café puro', 8.99)">
+            </div>
+
+            <div class="boxp" id="café-americano">
+                <img src="https://i.ibb.co/tb0H4tV/menu-6.png" alt="item-6">
+                <h3>Café americano</h3>
+                <div class="price">R$ 10,99 <span>R$15,00</span></div>
+                <input class="btn1" type="submit" value="adicionar ao carrinho" onclick="addCarrinho('café americano', 10.99)">
+            </div>
+        </div>
+    </section>
+    <h2 class="title">nossos <span>clientes</span></h2>
+    <section class="review" id="review">
+        
+
+        <div class="box-container">
+            <div class="box">
+                <img src="https://i.ibb.co/8dT8L8V/quote-img.png" alt="">
+                <p>Gostei bastante! O café tem um sabor delicioso e entrega rápida. Só não dou 5 estrelas porque achei o preço um pouquinho alto, mas pela qualidade vale a pena. Pretendo comprar novamente!</p>
+                <img class="user"" src="https://i.ibb.co/3s9j3Y7/pic-3.png" alt="">
+                <h3>joao da silva</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="29" height="29" src="https://img.icons8.com/material-sharp/27/ffffff/star-half.png" alt="star-half"/>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://i.ibb.co/8dT8L8V/quote-img.png" alt="">
+                <p>Simplesmente maravilhoso! O café chegou rápido, bem embalado e com um aroma incrível. O sabor é encorpado e suave ao mesmo tempo, perfeito para qualquer hora do dia. Com certeza virei cliente fiel!</p>
+                <img class="user"" src="https://i.ibb.co/4JLPK4b/pic-2.png" alt="">
+                <h3>Maria eduarda</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="https://i.ibb.co/8dT8L8V/quote-img.png" alt="">
+                <p>Excelente experiência! O site é fácil de navegar, os produtos têm ótima descrição e a qualidade do café é sensacional. Recomendo muito para quem busca um café especial no dia a dia.</p>
+                <img class="user" src="https://i.ibb.co/c23H6vN/pic-1.png" alt="">
+                <h3>matheus felipe</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/star--v1.png" alt="star--v1"/>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <section class="address" id="address">
+        <h2 class="title">nosso <span>endereço</span></h2>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29402.59269992712!2d-43.2973201610531!3d-22.901414148878068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997dba09c46ead%3A0xe78d6a9b032aa4e!2zUmlvIENhZsOpICYgQmlzdHLDtA!5e0!3m2!1spt-BR!2sbr!4v1746638801260!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="footer">
+        <div class="share">
+            <a href="https://www.instagram.com/"><img id="instagram" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/instagram-new.png" alt="instagram-new"/></a>
+            <a href="https://web.whatsapp.com/"><img id="whats" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/whatsapp.png" alt="whatsapp"/></a>
+            <a href="https://pt-br.facebook.com/"><img id="facebook" width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook-new.png" alt="facebook-new"/></a>           
+        </div>
+    </section>
+
+    <script src="carrinho.js"></script>
+    <script src="pesquisa.js"></script>
+    <script src="modoclaro.js"></script>
+    
+</body>
+</html>
