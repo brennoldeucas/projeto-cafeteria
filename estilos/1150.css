@@ -133,10 +133,6 @@ header{
 
 @media screen and (max-width: 711px){
 
-.navBar a{
-  padding: 10px;
-}
-
 .sobre {
   padding: 2rem;
   
@@ -210,8 +206,8 @@ section#lista-carrinho{
 }
 
 .navBar a {
-  width: 55%;
-  font-size: 1.2em;
+  width: 65%;
+  font-size: 1.1em;
   padding: 6px;
 }
 
@@ -232,5 +228,12 @@ header{
   flex-direction: column;
   flex-wrap: nowrap;    
 }
+
+.menu .box-container{
+  width: 85%;
+  margin: 0 auto;
 }
+}
+
+
 

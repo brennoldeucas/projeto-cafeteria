@@ -98,17 +98,17 @@ header{
 .btn1{
     background-color: var(--main-color);
     color: #fff;
-    padding: 1rem 1rem;
+    padding: 1rem;
     font-size: 1.7rem;
     cursor: pointer;
-    margin-top: 1rem;
+    margin: 0 auto;
     display: inline-block;  
-    border-radius: 10rem;
-    
+    border-radius: 10rem;   
+
 }
 
 .btn:hover{
-    letter-spacing: 0.3rem;
+    padding: 2rem;
 }
 
 .home-container{
