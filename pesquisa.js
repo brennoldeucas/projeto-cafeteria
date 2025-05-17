@@ -65,7 +65,7 @@ const fecharP = document.createElement('div')
         containerPesquisa.style.display = 'none'
     })
 
-    containerPesquisa.appendChild(fechar)
+    containerPesquisa.appendChild(fecharP)
 
 //lista simulada de produtos
 const produtos = [

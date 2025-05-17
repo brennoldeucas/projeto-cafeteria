@@ -99,15 +99,15 @@ header{
     background-color: var(--main-color);
     color: #fff;
     padding: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     cursor: pointer;
     margin: 0 auto;
     display: block;  
     border-radius: 10rem;   
 }
 
-.btn:hover{
-    padding: 2rem;
+.btn1:hover{
+    background-color: #d69b53;
 }
 
 .home-container{
@@ -398,9 +398,8 @@ header{
 
 .lista{               /* Scroll horizontal */
     padding: 0;
-    margin: 0 0 28px 0;        /* Espaço abaixo da lista */
+    margin: 10px 0 50px 0;        /* Espaço abaixo da lista */
     list-style: none;          /* Remove bolinhas */
-    border-bottom: 1px solid #ddd;
 }
 
 .lista li{     /* Fica lado a lado */
@@ -446,7 +445,6 @@ header{
 
 #container-pesquisa{
     box-shadow: 1px 1px 1px 1px var(--bg) inset;
-    background-image: url('../html-css/');
 }
 
 .item-pesquisa{

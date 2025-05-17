@@ -98,6 +98,7 @@
 
 section#lista-carrinho{
   width: 40%;
+  position: absolute;
 }
 
 .navBar{
@@ -119,7 +120,7 @@ header{
   flex-direction: column; /* empilha os itens do header */
   align-items: center;
   padding: 10px;
-  position: relative;
+  position: fixed;
   margin-bottom: 0px;   
 }
 
@@ -127,6 +128,16 @@ header{
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;    
+}
+
+.lista{               /* Scroll horizontal */
+    padding: 0;
+    margin: 10px 0 60px 0;        /* Espaço abaixo da lista */
+    list-style: none;          /* Remove bolinhas */
+}
+
+#lista-carrinho{
+  margin-top: 130px;
 }
 
 }
@@ -216,12 +227,14 @@ section#lista-carrinho{
 }
 
 
-header{
-  flex-direction: column; /* empilha os itens do header */
-  align-items: center;
-  padding: 0px;
-  position: relative;
-  margin-bottom: 0px;
+header{ /* empilha os itens do header */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  border-bottom: var(--border);
+  background-color: var(--bg);
 }
 
 .icons{
@@ -239,7 +252,33 @@ header{
   max-width: 100%;
 }
 
+.lista{               /* Scroll horizontal */
+  padding: 0;
+  margin: 0 0 80px 0;        /* Espaço abaixo da lista */
+  list-style: none;          /* Remove bolinhas */
 }
+
+#lista-carrinho{
+  margin-top: 110px;
+}
+
+#lista-carrinho .limpar, .comprar{
+  padding: 3px;
+  font-size: 1em;
+}
+
+#lista-carrinho .comprar{
+  font-size: 0.9em;
+}
+
+#container-pesquisa{
+  margin-top: 110px;
+  position: absolute;
+  right: 10px;
+}
+}
+
+
 
 
 
