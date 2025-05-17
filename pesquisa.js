@@ -52,6 +52,21 @@ icone.addEventListener('click', ()=>{
     
 })
 
+const fecharP = document.createElement('div')
+    fecharP.textContent = "❌"
+    fecharP.style.position = "absolute";
+    fecharP.style.top = "10px";
+    fecharP.style.right = "10px";
+    fecharP.style.cursor = "pointer";
+    fecharP.style.fontSize = "25px";
+    fecharP.style.color = 'red'
+
+    fechar.addEventListener('click', ()=>{
+        containerPesquisa.style.display = 'none'
+    })
+
+    containerPesquisa.appendChild(fechar)
+
 //lista simulada de produtos
 const produtos = [
     {nome: 'Café coado', preco: 15.99},
