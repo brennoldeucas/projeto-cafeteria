@@ -61,7 +61,7 @@ const fecharP = document.createElement('div')
     fecharP.style.fontSize = "25px";
     fecharP.style.color = 'red'
 
-    fechar.addEventListener('click', ()=>{
+    fecharP.addEventListener('click', ()=>{
         containerPesquisa.style.display = 'none'
     })
 

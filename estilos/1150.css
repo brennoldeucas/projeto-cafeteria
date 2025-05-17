@@ -1,22 +1,27 @@
 @media screen and (max-width: 1150px) and (min-width:711px){
 
-.header-section {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 15px;
-}
-
-.navBar {
-  flex-wrap: nowrap;
-  gap: 10px;
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .navBar a {
-  font-size: 2vw;
+  height: 70px;
+  width: 50%;  
+  text-align: center;
 }
 
-.navBar a:hover {
-  font-size: 22px;
+.navbar a:hover{
+  width: 50%;
 }
 
 .logo img {
@@ -99,29 +104,6 @@
 section#lista-carrinho{
   width: 40%;
   position: absolute;
-}
-
-.navBar{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  text-align: center;
-}
-
-.navBar a {
-  width: 30%;
-  padding: 5px;
-}
-
-header{
-  flex-direction: column; /* empilha os itens do header */
-  align-items: center;
-  padding: 10px;
-  position: fixed;
-  margin-bottom: 0px;   
 }
 
 .icons{
@@ -208,38 +190,50 @@ section#lista-carrinho{
 
 .navBar{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  width: 100%;
-  text-align: center;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 1rem;
+
 }
 
 .navBar a {
-  width: 65%;
-  font-size: 1.1em;
-  padding: 6px;
+  font-size: 0.9rem;
+  padding: 4px 6px;  
 }
 
-.navBar a:hover{
-  font-size: 1.4em;
+.logo{
+  display: flex;
+  align-items: center;
 }
 
+.logo img{
+  width: 90px;
+  height: auto;
+}
 
 header{ /* empilha os itens do header */
-  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  height: 150px;
   top: 0;
-  right: 0;
   left: 0;
-  z-index: 99;
-  border-bottom: var(--border);
-  background-color: var(--bg);
+  right: 0;
+  position: fixed;
+  z-index: 1000;
 }
 
 .icons{
-  flex-direction: column;
-  flex-wrap: nowrap;    
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+body{
+  padding-top: 100px;
 }
 
 .menu .box-container{
