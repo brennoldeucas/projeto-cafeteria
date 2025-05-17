@@ -102,9 +102,8 @@ header{
     font-size: 1.7rem;
     cursor: pointer;
     margin: 0 auto;
-    display: inline-block;  
+    display: block;  
     border-radius: 10rem;   
-
 }
 
 .btn:hover{
