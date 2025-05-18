@@ -78,7 +78,7 @@ body.modo-claro .navBar a {
 
 body.modo-claro #procurar{
     background-color: var(--black);
-    width: 30%;
+    width: 20%;
     height: auto;
     border-radius: 50%;
     padding: 9px;
