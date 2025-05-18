@@ -1,22 +1,16 @@
 @media screen and (max-width: 1150px) and (min-width:711px){
 
-.header{
+.header section{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 200px;
+  text-align: center;
 }
 .navBar{
   display: flex;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .navBar a {
@@ -27,8 +21,7 @@
 }
 
 .icons{
-  display: flex;
-  flex-direction: column;
+  margin-top: 10px;
 } 
 
 #procurar{
@@ -49,18 +42,15 @@
 }
 
 .logo{
-  display: none;
+  display: flex;
 }
 
 .logo img {
-  width: 120px;
-  display: none;
+  justify-content: flex-start;
 }
 
 .switch{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  margin-top: 10px;
 }
 
 .menu .box-container{
@@ -219,34 +209,22 @@ section#lista-carrinho{
   width: 50%;
 }
 
-.header{ /* empilha os itens do header */
+.header section{ /* empilha os itens do header */
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 200px;
+  text-align: center;
 }
 
 .navBar{
   display: flex;
-  flex-wrap: nowrap;
-  margin-left: 10px;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 15px;
 }
 
 .icons{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  width: 100%;
-  margin: 2px;
-  
+  margin-top: 10px; 
 }
 
 #procurar{
@@ -269,26 +247,21 @@ section#lista-carrinho{
 
 .navBar a {
   text-align: center;
-  width: fit-content;;
+  width: fit-content;
   font-size: 0.9rem;
-  margin: 1px;
-  padding: 8px;
+  margin: 5px;
+}
+
+.logo{
+  display: flex;
 }
 
 .logo img{
-  width: 90px;
-  height: auto;
-  margin-left: -10px;
+  margin-top: 10px;
 }
 
 .switch{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 100%;
-  margin-right: 20px;
+  
 }  
 
 .menu .box-container{
@@ -332,7 +305,7 @@ section#lista-carrinho{
 }
 
 .switch{
-
+  margin-top: 10px;
 }
 
 }
