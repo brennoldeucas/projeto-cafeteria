@@ -1,7 +1,7 @@
 let contadorCarrinho = document.querySelector('#carrinho-contagem');
 let quantidadeCarrinho = 0;
 let ValorTotal = 0 //valor total
-let limite1 = 10
+let limite1 = 5
 let limite2 = 1
 
 //

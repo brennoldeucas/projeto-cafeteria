@@ -78,18 +78,27 @@ body.modo-claro .navBar a {
 
 body.modo-claro #procurar{
     background-color: var(--black);
-    width: 50%;
+    width: 30%;
     height: auto;
     border-radius: 50%;
-    padding: 7px;
+    padding: 9px;
 }
+
+body.modo-claro #carrinho{
+    background-color: var(--black);
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    padding: 9px;
+}
+
 
 body.modo-claro .logo {
     border: 1px solid var(--border);
 }
 
 body.modo-claro #carrinho-contagem{
-    color: var(--black);
+    color: var(--main-color);
 }
 
 /* Texto da home e outras seções */
