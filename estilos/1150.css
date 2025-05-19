@@ -150,8 +150,7 @@ body{}
 @media screen and (max-width: 711px){
 
 .sobre {
-  padding: 2rem;
-  
+  padding: 2rem;  
 }
 
 .sobre .row {
@@ -211,6 +210,8 @@ section#lista-carrinho{
   width: 50%;
 }
 
+
+
 .header section{ /* empilha os itens do header */
   display: flex;
   flex-direction: column;
@@ -221,12 +222,10 @@ section#lista-carrinho{
 .navBar{
   display: flex;
   flex-direction: row;
-  gap: 10px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .icons{
-  margin-top: 10px; 
   display: flex;
 }
 
@@ -252,7 +251,7 @@ section#lista-carrinho{
   text-align: center;
   width: fit-content;
   font-size: 0.9rem;
-  margin: 5px;
+  margin: 2px;
 }
 
 .logo{
@@ -262,10 +261,6 @@ section#lista-carrinho{
 .logo img{
   margin-top: 10px;
 }
-
-.switch{
-  margin-top: 10px;
-}  
 
 .area-icons{
   display: flex;
