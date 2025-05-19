@@ -33,7 +33,7 @@ header{
 
 #procurar{
   background-color: var(--black);
-  width: 20%;
+  width: 30%;
   height: auto;
   border-radius: 50%;
   padding: 8px;
@@ -253,7 +253,7 @@ header{
 
 #procurar{
   background-color: var(--black);
-  width: 20%;
+  width: 25%;
   height: auto;
   border-radius: 50%;
   padding: 7px;
@@ -262,7 +262,7 @@ header{
 
 #carrinho{
   background-color: var(--black);
-  width: 50%;
+  width: 25%;
   height: auto;
   border-radius: 50%;
   padding: 7px;
@@ -289,8 +289,16 @@ header{
 }
 
 .menu .box-container{
-  width: 85%;
+  width: 90%;
+  max-width: 100vw;
   margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.menu .box-container .boxp{
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .menu .box-container .btn1{
