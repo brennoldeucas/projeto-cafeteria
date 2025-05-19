@@ -38,11 +38,13 @@
     text-transform: capitalize;
     transition: 0.2s linear;
     font-family: "Roboto", sans-serif;
-    
+    box-sizing: border-box;
 }
 
 body{
     background-color:var(--bg);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 section{

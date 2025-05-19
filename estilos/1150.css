@@ -6,19 +6,25 @@
   align-items: center;
   text-align: center;
 }
+
+header{
+    position: static;
+}
+
 .navBar{
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 10px;
   margin-top: 15px;
 }
 
 .navBar a {
   text-align: center;
   width: fit-content;
-  font-size: 0.9rem;
-  margin: 4px;
-  padding: 5px;
+  font-size: 1rem;
+  margin: 7px;
+  padding: 8px;
 }
 
 .icons{
@@ -148,6 +154,21 @@ body{}
 
 @media screen and (max-width: 711px){
 
+
+  .home-container,
+  .header section,
+  .box-container,
+  .row,
+  .conteudo {
+    width: 100%;
+  }
+
+.boxp{
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
 .sobre {
   padding: 2rem;  
 }
@@ -209,7 +230,9 @@ section#lista-carrinho{
   width: 50%;
 }
 
-
+header{
+    position: static;
+}
 
 .header section{ /* empilha os itens do header */
   display: flex;
