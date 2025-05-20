@@ -290,14 +290,14 @@ header{
 
 .menu .box-container{
   width: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 10px;
   box-sizing: border-box;
 }
 
 .menu .box-container .boxp{
   width: 100%;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
