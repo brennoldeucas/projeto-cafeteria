@@ -6,7 +6,6 @@ containerPesquisa.id = 'container-pesquisa';
 containerPesquisa.style.position = 'fixed';
 containerPesquisa.style.top = '150px';
 containerPesquisa.style.right = '120px';
-containerPesquisa.style.background = '#fff';
 containerPesquisa.style.border = '1px solid #ccc';
 containerPesquisa.style.borderRadius = '10px';
 containerPesquisa.style.zIndex = '9999';
@@ -17,7 +16,7 @@ document.body.appendChild(containerPesquisa);
 const Busca = document.createElement('input')
 Busca.classList.add('busca')
 Busca.type = 'text'
-Busca.placeholder = 'Buscar produto...🔎'
+Busca.placeholder = 'Buscar produto...🔎 '
 Busca.style.width = '90%';
 Busca.style.padding = '10px'
 Busca.style.marginBottom = '15px'

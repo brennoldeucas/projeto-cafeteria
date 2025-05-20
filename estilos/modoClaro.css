@@ -91,6 +91,9 @@ body.modo-claro #carrinho{
     border-radius: 50%;
     padding: 8px;
 }
+body.modo-claro #listacarrinho{
+    background-color: #aa856b;
+}
 
 
 body.modo-claro .logo {

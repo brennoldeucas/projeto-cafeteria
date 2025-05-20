@@ -426,6 +426,7 @@ header{
 
 #lista-carrinho{
     width: 23%;
+    background-color: #aa856b;
 }
 
 #lista-carrinho::before {
@@ -452,6 +453,7 @@ header{
 
 #container-pesquisa{
     box-shadow: 1px 1px 1px 1px var(--bg) inset;
+    background-color: #aa856b;
 }
 
 .item-pesquisa{
@@ -467,7 +469,7 @@ header{
 
 .seucarrinho{
     font-weight: bold;
-    background-color: #8B5E3C;
+    background-color: #896347;
     width: 50%;
     margin: 0 auto;
     border-radius: 10px;

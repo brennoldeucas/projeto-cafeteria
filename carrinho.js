@@ -11,7 +11,6 @@ let listaCarrinho = document.createElement('section');
     listaCarrinho.style.position = 'fixed';
     listaCarrinho.style.top = '150px';
     listaCarrinho.style.right = '20px';
-    listaCarrinho.style.background = '#fff';
     listaCarrinho.style.color = '#000';
     listaCarrinho.style.padding = '10px';
     listaCarrinho.style.borderRadius = '10px';
