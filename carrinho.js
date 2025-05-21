@@ -98,6 +98,8 @@ let item = document.createElement('li');
     listaCarrinho.style.display = 'block';
     
     Valor.textContent = `total: R$ ${ValorTotal.toFixed(2)}`
+
+    salvarCarrinho()
 }
 
 // Abre e fecha o carrinho ao clicar no ícone
@@ -124,6 +126,10 @@ limpar.addEventListener('click', function(){
     listaCarrinho.style.display = 'none'
 
     Valor.textContent = 'Total: R$ 0.00'
+
+    salvarCarrinho()
+
+    animarCarrinho()
 })
 
 function animarCarrinho(){
@@ -147,6 +153,8 @@ comprar.addEventListener('click', function(){
     listaCarrinho.style.display = 'none';
     Valor.textContent = 'Total: R$ 0.00';
 
+    salvarCarrinho()
+
     animarCarrinho()
 })
 
@@ -157,7 +165,7 @@ function salvarCarrinho(){
     document.querySelectorAll('.itens').forEach(item =>{
         const texto = item.textContent
         const [nome, preco] = texto.split('- R$')
-        item.push({nome, preco: parseFloat(preco)})
+        itens.push({nome: nome.trim(), preco: parseFloat(preco)})
     })
 
     // Cria objeto para salvar
@@ -167,8 +175,10 @@ function salvarCarrinho(){
         total: ValorTotal
     }
 
-    // Salva no navegador como string JSON
     localStorage.setItem('carrinho', JSON.stringify(dados))
+}
+    // Salva no navegador como string JSON
+    
 
     // 🔁 RESTAURA CARRINHO AO CARREGAR A PÁGINA
     function restaurarCarrinho(){
@@ -191,8 +201,6 @@ function salvarCarrinho(){
         Valor.textContent = `total: R$ ${ValorTotal.toFixed(2)}`
         listaCarrinho.style.display = 'none';
     }
-
     // 🚀 Ativa restauração assim que o script carregar
     restaurarCarrinho();
-}
 
