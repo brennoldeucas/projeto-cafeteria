@@ -193,6 +193,6 @@ function salvarCarrinho(){
     }
 
     // 🚀 Ativa restauração assim que o script carregar
-    
+    restaurarCarrinho();
 }
 
