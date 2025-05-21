@@ -178,7 +178,21 @@ function salvarCarrinho(){
         dados.itens.forEach(item => {
             const li = document.createElement('li')
             li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`
+            li.classList.add('itens')
+            li.style.marginBottom = '08px'
+            li.style.listStyleType = 'none';
+            li.style.textAlign = 'center';
+            listaUl.appendChild(li);
         })
+
+        quantidadeCarrinho = dados.quantidade
+        ValorTotal = dados.total
+        contadorCarrinho.innerText = `(${quantidadeCarrinho})`
+        Valor.textContent = `total: R$ ${ValorTotal.toFixed(2)}`
+        listaCarrinho.style.display = 'none';
     }
+
+    // 🚀 Ativa restauração assim que o script carregar
+    
 }
 
