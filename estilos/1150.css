@@ -315,8 +315,6 @@ header{
 section#lista-carrinho{
   width: 75%;
   background-color: #aa856b;
-  position: absolute;
-  z-index: 0;
 }
 
 #lista-carrinho .limpar, .comprar{

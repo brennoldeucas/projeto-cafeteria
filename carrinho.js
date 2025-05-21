@@ -80,7 +80,7 @@ let fechar = document.createElement("div")
 function addCarrinho(nome, preco) {
 
     if(quantidadeCarrinho >= limite1){
-        alert('vc atingiu o limite de itens no carinho!')
+        alert('vc atingiu o limite de itens no carrinho!')
         return
     }   
     
@@ -150,4 +150,20 @@ comprar.addEventListener('click', function(){
     animarCarrinho()
 })
 
+function salvarCarrinho(){
+    const itens = []
+    
+    // Percorre todos os <li> adicionados no carrinho
+    document.querySelectorAll('.itens').forEach(item =>{
+        const texto = item.textContent
+        const [nome, preco] = texto.split('- R$')
+        item.push({nome, preco: parseFloat(preco)})
+    })
+
+    const dados = {
+        itens,
+        quantidade: quantidadeCarrinho,
+        total: ValorTotal
+    }
+}
 
