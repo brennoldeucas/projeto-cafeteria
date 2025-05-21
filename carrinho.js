@@ -160,10 +160,25 @@ function salvarCarrinho(){
         item.push({nome, preco: parseFloat(preco)})
     })
 
+    // Cria objeto para salvar
     const dados = {
         itens,
         quantidade: quantidadeCarrinho,
         total: ValorTotal
+    }
+
+    // Salva no navegador como string JSON
+    localStorage.setItem('carrinho', JSON.stringify(dados))
+
+    // 🔁 RESTAURA CARRINHO AO CARREGAR A PÁGINA
+    function restaurarCarrinho(){
+        const dados = JSON.parse(localStorage.getItem('carrinho'))
+        if (!dados) return
+
+        dados.itens.forEach(item => {
+            const li = document.createElement('li')
+            li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`
+        })
     }
 }
 
