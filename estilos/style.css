@@ -321,6 +321,7 @@ header{
     cursor: pointer;
     border-radius: 50%;
     padding: 1rem;
+    background-color: var(--main-color);
     
 }
 
@@ -497,5 +498,10 @@ header{
 .busca{
     background-color: #e6c6b0;
     font-weight: bold;
+}
+#idioma{
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
