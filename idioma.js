@@ -20,6 +20,14 @@ const textos = {
         exp: "café expresso",
         puro: "café puro",
         amer: "café americano",
+        coadoP: "R$ 15,99.",
+        canelaP: "R$ 16,99.",
+        capP: "R$ 13,99",
+        expP: "R$ 11,99",
+        puroP: "R$ 8,99",
+        amerP: "RS 10,99",
+
+        
 
     },
 
@@ -44,8 +52,12 @@ const textos = {
         exp: "express",
         puro: "pure coffee",
         amer: "American coffee",
-        coadoP: "US$ 3,20, US$ 4,20",
-        canelaP: "",
+        coadoP: "US$ 3,20",
+        canelaP: "US$ 3.40",
+        capP: "US$ 2,80",
+        expP: "US$ 2,40",
+        puroP: "US$ 1,80",
+        amerP: "US$ 2,20",
     },
 
     fr: {
@@ -69,8 +81,12 @@ const textos = {
         exp: "exprimer",
         puro: "café pur",
         amer: "café américain",
-        coadoP: "",
-        canelaP: "",
+        coadoP: "€ 2,91",
+        canelaP: "€ 3,09",
+        capP: "€ 2,54",
+        expP: "€ 2,18",
+        puroP: "€ 1,63",
+        amerP: "€ 2,00",
         
     }
 }
