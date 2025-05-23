@@ -499,5 +499,19 @@ header{
     padding: 2px;
 }
 
+.voltar{
+    color: #Ffff;
+    background-color: var(--main-color);
+    padding: 3px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.voltar:hover{
+    background-color: wheat;
+    letter-spacing: 1px;
+}
+
 
 
