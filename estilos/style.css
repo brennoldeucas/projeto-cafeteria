@@ -420,7 +420,7 @@ header{
 
 #lista-carrinho{
     width: 23%;
-    background-color: #aa856b;
+    background-color: #fff;
 }
 
 #lista-carrinho::before {
@@ -447,7 +447,7 @@ header{
 
 #container-pesquisa{
     box-shadow: 1px 1px 1px 1px var(--bg) inset;
-    background-color: #aa856b;
+    background-color: #fff;
 }
 
 .item-pesquisa{
@@ -494,18 +494,19 @@ header{
 }
 #idioma{
     color: #111;
-    margin-left: 10px;  
+    margin-left: 15px;  
     border-radius: 10px;
     padding: 2px;
 }
 
 .voltar{
-    color: #Ffff;
+    color: #fff;
     background-color: var(--main-color);
     padding: 3px;
     border-radius: 10px;
     width: fit-content;
     margin: 0 auto;
+    z-index: 1000;
 }
 
 .voltar:hover{

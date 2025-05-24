@@ -1,3 +1,7 @@
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
+
 let contadorCarrinho = document.querySelector('#carrinho-contagem');
 let quantidadeCarrinho = 0;
 let ValorTotal = 0 //valor total
@@ -15,7 +19,7 @@ let listaCarrinho = document.createElement('section');
     listaCarrinho.style.padding = '10px';
     listaCarrinho.style.borderRadius = '10px';
     listaCarrinho.style.display = 'none';
-    listaCarrinho.style.cursor = 'pointer'
+    listaCarrinho.style.cursor = 'pointer';
     document.body.appendChild(listaCarrinho);
 
 //

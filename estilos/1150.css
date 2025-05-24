@@ -9,6 +9,7 @@
 
 header{
     position: static;
+    
 }
 
 .navBar{
@@ -313,8 +314,7 @@ header{
 }
 
 section#lista-carrinho{
-  width: 75%;
-  background-color: #aa856b;
+  width: 70%;
 }
 
 #lista-carrinho .limpar, .comprar{
@@ -334,6 +334,7 @@ section#lista-carrinho{
 .switch{
   margin-top: 10px;
 }
+
 
 }
 
