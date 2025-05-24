@@ -31,6 +31,7 @@ const textos = {
         av2: "Simplesmente maravilhoso! O café chegou rápido, bem embalado e com um aroma incrível. O sabor é encorpado e suave ao mesmo tempo, perfeito para qualquer hora do dia. Com certeza virei cliente fiel!",
         av3: "Excelente experiência! O site é fácil de navegar, os produtos têm ótima descrição e a qualidade do café é sensacional. Recomendo muito para quem busca um café especial no dia a dia.",
         endereço: "nosso endereço",
+        voltar: "voltar"
         
 
     },
@@ -67,6 +68,7 @@ const textos = {
         av2: "Simply wonderful! The coffee arrived quickly, well packaged and with an incredible aroma. The flavor is full-bodied and smooth at the same time, perfect for any time of day. I will definitely become a loyal customer!",
         av3: "Excellent experience! The website is easy to navigate, the products are well described and the quality of the coffee is sensational. I highly recommend it for anyone looking for a special coffee on a daily basis.",
         endereço: "our address",
+        voltar: "return"
     },
 
     fr: {
@@ -101,6 +103,7 @@ const textos = {
         av2: "Tout simplement merveilleux ! Le café est arrivé rapidement, bien emballé et avec un arôme incroyable. Son goût est à la fois corsé et onctueux, parfait à tout moment de la journée. Je vais certainement devenir un client fidèle !",
         av3: "Excellente expérience ! Le site web est facile à naviguer, les produits sont bien décrits et la qualité du café est exceptionnelle. Je le recommande vivement à tous ceux qui recherchent un café exceptionnel au quotidien.",
         endereço: "notre adresse",
+        voltar: "revenir en arrière"
         
     }
 }
